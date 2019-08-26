@@ -1,0 +1,40 @@
+#teste1 {
+    padding: 10px;
+}
+#teste2 {
+    padding: 5px;
+    text-align: center;
+}
+
+.p {
+    align-content: center;
+    color: blanchedalmond;
+
+}
+
+header {
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 35px 
+}
+
+section {
+    background: rgba(160, 67, 5, 0.733);
+    box-shadow: 5px 5px 10px gray ;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    color: azure;
+}
+
+footer {
+    margin:  auto;
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+    font: italic 18px bold;
+}
+
