@@ -1,14 +1,14 @@
 // Botão CHECAR
 $('#checar_idade').click(function checarIdade(){
     let data = new Date(),
-        ano = data.getFullYear() 
-        fano = document.getElementById('idade')
-        res = document.querySelector('div#res')
-    if(fano.value.length == 0 || Number(fano.value) > ano){
-        alert('[ERRO] Verifique os dados novamente!')
+        anoAtual = data.getFullYear(), 
+        Nascimento = $('#idade').val();
+
+    if(Nascimento == 0 || Nascimento > anoAtual){
+        alert('[ERRO] Verifique os dados novamente!')        
     }  else {
         let fsex = document.getElementsByName('radsex'),
-            idade = ano - Number(fano.value),
+            idade = anoAtual - Nascimento,
             genero = ''
             // check gênero
             fsex[0].checked ? genero = 'Homem' : fsex[1].checked ? genero = 'Mulher' : ''
