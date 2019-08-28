@@ -12,9 +12,6 @@ $('#checar_idade').click(function checarIdade(){
             genero = ''
             // check gênero
             fsex[0].checked ? genero = 'Homem' : fsex[1].checked ? genero = 'Mulher' : ''
-
-        $('#res').html(`${genero} de ${idade} anos`)
+            genero != '' ? $('#res').html(`${genero} de ${idade} anos`) : alert('Gênero não foi selecionado!')   
     }
 })
-
-
