@@ -1,4 +1,3 @@
-// Botão CHECAR
 $('#checar_idade').click(function checarIdade(){
     let data = new Date(),
         anoAtual = data.getFullYear(), 
@@ -8,9 +7,7 @@ $('#checar_idade').click(function checarIdade(){
     } else {
             idade = anoAtual - Nascimento,
             genero = ''
-            // check gênero
-            $('input#mas').is(':checked') ? genero = 'Homem' : 
-            $('input#fem').is(':checked') ? genero = 'Mulher' : ''
+            $('input#mas').is(':checked') ? genero = 'Homem' : $('input#fem').is(':checked') ? genero = 'Mulher' : ''
             genero != '' ? $('#res').html(`${genero} de ${idade} anos`) : alert('Gênero não foi selecionado!')   
     }
 })
