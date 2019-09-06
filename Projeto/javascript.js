@@ -6,11 +6,11 @@ $('#checar_idade').click(function checarIdade(){
     if(Nascimento <= 0 || Nascimento > anoAtual){
         alert('[ERRO] Verifique os dados novamente!')        
     } else {
-        let fsex = document.getElementsByName('radsex'),
             idade = anoAtual - Nascimento,
             genero = ''
             // check gênero
-            fsex[0].checked ? genero = 'Homem' : fsex[1].checked ? genero = 'Mulher' : ''
+            $('input#mas').is(':checked') ? genero = 'Homem' : 
+            $('input#fem').is(':checked') ? genero = 'Mulher' : ''
             genero != '' ? $('#res').html(`${genero} de ${idade} anos`) : alert('Gênero não foi selecionado!')   
     }
 })
